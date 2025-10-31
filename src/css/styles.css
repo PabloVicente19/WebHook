@@ -255,10 +255,12 @@ header {
 }
 .activities__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
+  gap: 2rem;
   justify-content: center;
   align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .activity__card {
   background-color: var(--dark-card);
@@ -268,9 +270,12 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
   border-radius: 1rem;
   border: 1px solid var(--orange);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 .activity__card:hover {
   transform: translateY(-5px);
@@ -278,19 +283,26 @@ header {
 }
 .activity__img {
   padding: 0.5rem;
-  max-width: 100%;
-  height: auto;
-  border-radius: 1.5rem;
-  aspect-ratio: 16/9;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 .activity__title {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+  font-size: 1.4rem;
+  margin: 0.8rem 0 0.5rem 0;
+  font-weight: 600;
+  color: var(--orange);
 }
 .activity__description {
-  font-size: 1rem;
-  padding: 0 1rem 1rem 1rem;
-  color: var(--white);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 0 1.2rem 1.2rem 1.2rem;
+  color: var(--gray-light);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 /* HORARIOS SECTION */
