@@ -1,0 +1,602 @@
+/* ===================================
+   RESPONSIVE DESIGN - GIMNASIO HOOK
+   =================================== */
+
+/* BREAKPOINTS:
+   - Mobile: 320px - 767px
+   - Tablet: 768px - 1023px  
+   - Desktop: 1024px+
+*/
+
+/* ========== TABLET (768px - 1023px) ========== */
+@media screen and (max-width: 1023px) {
+  /* NAVEGACIÓN */
+  .nav {
+    padding: 0;
+    min-height: 4.5rem;
+    flex-direction: row;
+  }
+
+  .nav .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav__logo {
+    justify-content: flex-start;
+  }
+
+  .nav__list {
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+
+  .nav__link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .nav__list li:nth-child(4) a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* HERO SECTION */
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__btns {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .hero__btn {
+    width: 250px;
+    text-align: center;
+  }
+
+  /* ACTIVIDADES */
+  .activities {
+    padding: 3rem 1rem;
+  }
+
+  .activities__title {
+    font-size: 2.2rem;
+  }
+
+  .activities__grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* HORARIOS */
+  .horarios {
+    padding: 3rem 1rem;
+  }
+
+  .horarios__title {
+    font-size: 2.2rem;
+  }
+
+  .horarios__grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* CONTACTO */
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact__title {
+    font-size: 2.2rem;
+  }
+
+  .contact__form {
+    max-width: 500px;
+    padding: 2.5rem;
+  }
+
+  /* FOOTER */
+  .footer__content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* ========== MOBILE (320px - 767px) ========== */
+@media screen and (max-width: 767px) {
+  /* NAVEGACIÓN */
+  .nav {
+    flex-direction: column;
+    padding: 0;
+    min-height: auto;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav .container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav__logo {
+    order: 0;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav__img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav__item {
+    flex: 1;
+    min-width: 120px;
+    max-width: 150px;
+  }
+
+  /* Ocultar el item de contacto en móvil */
+  .nav__item:nth-child(4) {
+    display: none;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(55, 65, 81, 0.3);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__btns {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .hero__btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* ACTIVIDADES */
+  .activities {
+    padding: 2.5rem 1rem;
+  }
+
+  .activities__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .activities__subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .activities__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .activity__card {
+    max-width: 100%;
+  }
+
+  .activity__img {
+    height: 200px;
+  }
+
+  .activity__title {
+    font-size: 1.3rem;
+  }
+
+  .activity__description {
+    font-size: 0.9rem;
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+
+  /* HORARIOS */
+  .horarios {
+    padding: 2.5rem 1rem;
+  }
+
+  .horarios__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .horarios__subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .horarios__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .horario__card {
+    padding: 1.5rem;
+  }
+
+  .horario__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .horario__schedule p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* CONTACTO */
+  .contact {
+    padding: 2.5rem 1rem;
+  }
+
+  .contact__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .contact__subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact__form {
+    max-width: 100%;
+    padding: 2rem 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .contact__input,
+  .contact__textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .contact__textarea {
+    min-height: 100px;
+  }
+
+  .contact__btn {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__section {
+    text-align: center;
+  }
+
+  .footer__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer__nav-link {
+    font-size: 0.9rem;
+  }
+
+  .footer__bottom {
+    padding-top: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ========== MOBILE PEQUEÑO (320px - 479px) ========== */
+@media screen and (max-width: 479px) {
+  /* NAVEGACIÓN */
+  .nav__list {
+    gap: 0.3rem;
+  }
+
+  .nav__item {
+    min-width: 70px;
+    max-width: 80px;
+  }
+
+  .nav__link {
+    padding: 0.6rem 0.3rem;
+    font-size: 0.75rem;
+  }
+
+  /* HERO */
+  .hero__title {
+    font-size: 1.7rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  /* ACTIVIDADES */
+  .activities__title {
+    font-size: 1.6rem;
+  }
+
+  .activity__img {
+    height: 180px;
+  }
+
+  /* HORARIOS */
+  .horarios__title {
+    font-size: 1.6rem;
+  }
+
+  .horario__card {
+    padding: 1.2rem;
+  }
+
+  /* CONTACTO */
+  .contact__title {
+    font-size: 1.6rem;
+  }
+
+  .contact__form {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* ========== DESKTOP GRANDE (1024px+) ========== */
+@media screen and (min-width: 1024px) {
+  /* CONTENEDOR GENÉRICO PARA LIMITAR CONTENIDO */
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* NAVEGACIÓN */
+  .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* HERO */
+  .hero .container {
+    text-align: center;
+  }
+
+  /* ACTIVIDADES */
+  .activities__grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* HORARIOS */
+  .horarios__grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* CONTACTO */
+  .contact__form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* FOOTER - mantener la estructura existente */
+  .footer__content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ========== MODO PAISAJE EN MÓVILES ========== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero__btns {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .hero__btn {
+    width: auto;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+/* ========== OPTIMIZACIONES DE PERFORMANCE ========== */
+@media screen and (max-width: 767px) {
+  /* Reducir animaciones en móviles para mejor performance */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Optimizar imágenes en móviles */
+  .activity__img,
+  .nav__img {
+    image-rendering: optimizeSpeed;
+  }
+}
+
+/* ========== ACCESIBILIDAD RESPONSIVE ========== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========== DARK MODE SUPPORT ========== */
+@media (prefers-color-scheme: dark) {
+  /* Ya tenemos un diseño oscuro, pero podemos ajustar contrastes */
+  :root {
+    --gray-light: #e5e7eb;
+    --white: #ffffff;
+  }
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+  .nav,
+  .hero__btns,
+  .contact__form,
+  .footer {
+    display: none;
+  }
+
+  .hero__title,
+  .activities__title,
+  .horarios__title {
+    color: black;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .activity__card,
+  .horario__card {
+    border: 1px solid #ccc;
+    background: white;
+    color: black;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ========== ANIMACIONES DE SCROLL ========== */
+.animate-element {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.animate-element.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== ESTILOS ADICIONALES RESPONSIVE ========== */
+
+/* Desktop navigation improvements */
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    justify-content: flex-start;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* Mostrar el item de contacto en desktop/tablet */
+  .nav__item:nth-child(4) {
+    display: block;
+  }
+
+  .nav__link {
+    background-color: transparent;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Mejoras de spacing en tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero__title {
+    font-size: 2.8rem;
+  }
+
+  .activities__grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .horarios__grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}

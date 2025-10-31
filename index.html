@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Gimnasio Hook - Boxeo, MMA, Kick Boxing, Cross Training y Taekwondo</title>
+  <meta name="description"
+    content="Entrena en el mejor gimnasio de deportes de combate. Ofrecemos clases de Boxeo, MMA, Kick Boxing, Cross Training y Taekwondo. ¡Desarrolla tu potencial!">
+  <meta name="keywords"
+    content="gimnasio, boxeo, MMA, kick boxing, cross training, taekwondo, deportes de combate, entrenamiento, fitness, artes marciales">
+  <meta name="author" content="Gimnasio Hook">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Gimnasio Hook - Deportes de Combate y Entrenamiento">
+  <meta property="og:description"
+    content="El mejor gimnasio especializado en deportes de combate. Boxeo, MMA, Kick Boxing, Cross Training y Taekwondo.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gimnasiohook.com">
+  <meta property="og:image" content="./src/public/images/hero-img.jpg">
+  <meta property="og:site_name" content="Gimnasio Hook">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gimnasio Hook - Deportes de Combate">
+  <meta name="twitter:description"
+    content="Entrena con los mejores en Boxeo, MMA, Kick Boxing, Cross Training y Taekwondo.">
+  <meta name="twitter:image" content="./src/public/images/hero-img.jpg">
+
+  <!-- Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Gimnasio Hook",
+    "description": "Gimnasio especializado en deportes de combate y entrenamiento funcional",
+    "url": "https://gimnasiohook.com",
+    "telephone": "+54 11 1234-5678",
+    "email": "info@gimnasiohook.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AR",
+      "addressLocality": "Buenos Aires"
+    },
+    "openingHours": "Mo-Fr 06:00-22:00, Sa 10:00-20:00, Su 10:00-18:00",
+    "sportsActivityLocation": [
+      "Boxing",
+      "Mixed Martial Arts",
+      "Kickboxing", 
+      "CrossFit",
+      "Taekwondo"
+    ],
+    "image": "./src/public/images/hero-img.jpg"
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./src/public/images/favicon.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="container">
+        <a href="index.html" class="nav__logo">
+          <img src="./src/public/images/hook.logo.jpg" alt="Gimnasio Hook Logo" class="nav__img">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#hero" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#activities" class="nav__link">Actividades</a>
+          </li>
+          <li class="nav__item">
+            <a href="#horarios" class="nav__link">Horarios</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1 class="hero__title">Gimnasio Hook</h1>
+        <p class="hero__subtitle">Desarrolla tu potencial</p>
+        <div class="hero__btns">
+          <a href="#activities" class="hero__btn">Ver actividades</a>
+          <a href="#contact" class="hero__btn">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="main">
+    <!-- SECCION DE LAS ACTIVIDADES -->
+    <section class="activities" id="activities">
+      <div class="container">
+        <h2 class="activities__title">Nuestras Actividades</h2>
+        <p class="activities__subtitle">Elige tu camino hacia la excelencia física y mental</p>
+
+        <div class="activities__grid">
+          <article class="activity__card" itemscope itemtype="https://schema.org/SportsActivity">
+            <img src="./src/public/images/activity-box.jpg" alt="Clases de boxeo en Gimnasio Hook"
+              class="activity__img">
+            <h3 class="activity__title" itemprop="name">Boxeo</h3>
+            <p class="activity__description" itemprop="description">Mejora tu resistencia y fuerza con nuestras clases
+              de
+              boxeo profesional. Aprende técnicas de combate y defensa personal.</p>
+          </article>
+
+          <article class="activity__card" itemscope itemtype="https://schema.org/SportsActivity">
+            <img src="./src/public/images/activity-kickboxing.jpg" alt="Clases de Kick Boxing en Gimnasio Hook"
+              class="activity__img">
+            <h3 class="activity__title" itemprop="name">Kick Boxing</h3>
+            <p class="activity__description" itemprop="description">Combina técnicas de boxeo y patadas para un
+              entrenamiento completo. Ideal para mejorar coordinación y flexibilidad.</p>
+          </article>
+
+          <article class="activity__card" itemscope itemtype="https://schema.org/SportsActivity">
+            <img src="./src/public/images/activity-mma.jpg" alt="Clases de MMA en Gimnasio Hook" class="activity__img">
+            <h3 class="activity__title" itemprop="name">MMA</h3>
+            <p class="activity__description" itemprop="description">Entrena en artes marciales mixtas con nuestros
+              expertos instructores certificados. Técnica completa y resistencia mental.</p>
+          </article>
+
+          <article class="activity__card" itemscope itemtype="https://schema.org/SportsActivity">
+            <img src="./src/public/images/activity-crossfit.jpg" alt="Clases de Cross Training en Gimnasio Hook"
+              class="activity__img">
+            <h3 class="activity__title" itemprop="name">Cross Training</h3>
+            <p class="activity__description" itemprop="description">Desarrolla fuerza y acondicionamiento físico con
+              rutinas variadas. Entrenamiento funcional de alta intensidad.</p>
+          </article>
+
+          <article class="activity__card" itemscope itemtype="https://schema.org/SportsActivity">
+            <img src="./src/public/images/activity-taekwondo.jpg" alt="Clases de Taekwondo en Gimnasio Hook"
+              class="activity__img">
+            <h3 class="activity__title" itemprop="name">Taekwondo</h3>
+            <p class="activity__description" itemprop="description">Aprende técnicas de defensa personal y mejora tu
+              flexibilidad. Arte marcial coreano enfocado en disciplina y respeto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION DE HORARIOS -->
+    <section class="horarios" id="horarios">
+      <div class="container">
+        <h2 class="horarios__title">Horarios</h2>
+        <p class="horarios__subtitle">Encuentra el horario perfecto para tu entrenamiento</p>
+
+        <div class="horarios__grid">
+          <article class="horario__card" itemscope itemtype="https://schema.org/Schedule">
+            <h3 class="horario__title" itemprop="name">Boxeo</h3>
+            <div class="horario__schedule" itemprop="description">
+              <p><strong>Lunes, Miercoles y Viernes:</strong> <time>16:30 - 18:00</time></p>
+              <p><strong>Martes y Jueves:</strong> <time>18:00 - 19:00</time></p>
+            </div>
+          </article>
+
+          <article class="horario__card" itemscope itemtype="https://schema.org/Schedule">
+            <h3 class="horario__title" itemprop="name">Kick Boxing</h3>
+            <div class="horario__schedule" itemprop="description">
+              <p><strong>Lunes, Miercoles y Viernes:</strong> <time>18:00 - 19:30</time></p>
+              <p><strong>Martes y Jueves:</strong> <time>17:00 - 18:00</time></p>
+            </div>
+          </article>
+
+          <article class="horario__card" itemscope itemtype="https://schema.org/Schedule">
+            <h3 class="horario__title" itemprop="name">MMA</h3>
+            <div class="horario__schedule" itemprop="description">
+              <p><strong>Viernes:</strong> <time>20:00 - 21:00</time></p>
+            </div>
+          </article>
+
+          <article class="horario__card" itemscope itemtype="https://schema.org/Schedule">
+            <h3 class="horario__title" itemprop="name">Cross Training</h3>
+            <div class="horario__schedule" itemprop="description">
+              <p><strong>Lunes, Miercoles y Viernes:</strong> <time>7:00 - 8:00</time></p>
+              <p><strong>Lunes a Viernes:</strong> <time>19:00 - 20:00</time></p>
+            </div>
+          </article>
+
+          <article class="horario__card" itemscope itemtype="https://schema.org/Schedule">
+            <h3 class="horario__title" itemprop="name">Taekwondo</h3>
+            <div class="horario__schedule" itemprop="description">
+              <p><strong>Martes y Jueves:</strong> <time>17:00 - 18:30</time></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION DE CONTACTO -->
+    <section class="contact" id="contact" itemscope itemtype="https://schema.org/ContactPage">
+      <div class="container">
+        <h2 class="contact__title" itemprop="name">Contáctanos</h2>
+        <p class="contact__subtitle" itemprop="description">Estamos aquí para ayudarte a alcanzar tus metas fitness</p>
+        <form action="#" class="contact__form" method="post" aria-label="Formulario de contacto">
+          <label for="nombre" class="sr-only">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" class="contact__input" placeholder="Nombre" required
+            aria-required="true">
+
+          <label for="email" class="sr-only">Correo electrónico</label>
+          <input type="email" id="email" name="email" class="contact__input" placeholder="Correo Electrónico" required
+            aria-required="true">
+
+          <label for="mensaje" class="sr-only">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" class="contact__textarea" placeholder="Mensaje" required
+            aria-required="true" rows="5"></textarea>
+
+          <button type="submit" class="contact__btn" aria-label="Enviar formulario de contacto"><span>Enviar
+              Mensaje</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__section">
+        <h3 class="footer__title">Navegación</h3>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Inicio</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#activities" class="footer__nav-link">Actividades</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#horarios" class="footer__nav-link">Horarios</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#instalaciones" class="footer__nav-link">Instalaciones</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#contact" class="footer__nav-link">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section">
+        <h3 class="footer__title">Actividades</h3>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a href="#boxeo" class="footer__nav-link">Boxeo</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#kickboxing" class="footer__nav-link">Kick Boxing</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#mma" class="footer__nav-link">MMA</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#crosstraining" class="footer__nav-link">Cross Training</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#taekwondo" class="footer__nav-link">Taekwondo</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section" itemscope itemtype="https://schema.org/LocalBusiness">
+        <h3 class="footer__title">Contacto</h3>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <span class="footer__nav-link" itemprop="address">📍 Av. Corrientes 1234, Buenos Aires</span>
+          </li>
+          <li class="footer__nav-item">
+            <span class="footer__nav-link">📞 <span itemprop="telephone">+54 11 1234-5678</span></span>
+          </li>
+          <li class="footer__nav-item">
+            <span class="footer__nav-link">✉️ <span itemprop="email">info@gimnasiohook.com</span></span>
+          </li>
+          <li class="footer__nav-item">
+            <span class="footer__nav-link" itemprop="openingHours">🕒 Lun - Vie: 6:00 - 22:00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Gimnasio Hook. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
