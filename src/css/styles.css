@@ -229,6 +229,20 @@ header {
 .activities {
   text-align: center;
   padding: 2rem 1rem;
+  position: relative;
+}
+
+.activities::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange), var(--red));
+  border-radius: 2px;
+  margin-top: 1rem;
 }
 .activities__title {
   font-size: 2.5rem;
@@ -284,6 +298,19 @@ header {
   background-color: var(--bg);
   padding: 4rem 1rem;
   text-align: center;
+  position: relative;
+}
+
+.horarios::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--orange), var(--red));
+  border-radius: 2px;
 }
 
 .horarios__title {
