@@ -139,9 +139,18 @@
     font-size: 2.2rem;
   }
 
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .contact__form {
-    max-width: 500px;
+    max-width: 100%;
     padding: 2.5rem;
+  }
+
+  .contact__map-container {
+    max-width: 100%;
   }
 
   /* FOOTER */
@@ -327,6 +336,11 @@
     margin-bottom: 2rem;
   }
 
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
   .contact__form {
     max-width: 100%;
     padding: 2rem 1.5rem;
@@ -346,6 +360,22 @@
   .contact__btn {
     padding: 1rem;
     font-size: 1rem;
+  }
+
+  .contact__map-container {
+    padding: 1.5rem;
+  }
+
+  .contact__map-title {
+    font-size: 1.5rem;
+  }
+
+  .contact__map-wrapper {
+    padding-bottom: 75%; /* Más cuadrado en móvil */
+  }
+
+  .contact__address p {
+    font-size: 0.9rem;
   }
 
   /* FOOTER */
@@ -523,9 +553,16 @@
   }
 
   /* CONTACTO */
-  .contact__form {
-    max-width: 500px;
-    margin: 0 auto;
+
+  .contact__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1200px;
+  }
+
+  .contact__map-container {
+    display: flex;
+    flex-direction: column;
   }
 
   /* FOOTER - mantener la estructura existente */
