@@ -90,15 +90,147 @@
       </div>
     </nav>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero" id="hero">
       <div class="container">
         <h1 class="hero__title">Gimnasio Hook</h1>
         <p class="hero__subtitle">Desarrolla tu potencial</p>
         <div class="hero__btns">
-          <a href="#activities" class="hero__btn">Ver actividades</a>
+          <a href="#horarios" class="hero__btn">Ver Horarios</a>
           <a href="#contact" class="hero__btn">Contáctanos</a>
         </div>
+      </div>
+    </section>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel">
+      <div class="carousel-container">
+        <!-- Slide 1 - Boxeo -->
+        <div class="carousel-slide active">
+          <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=1920&h=1080&fit=crop"
+            alt="Entrenamiento de Boxeo" loading="eager">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-content">
+            <h1 class="carousel-title">Boxeo</h1>
+            <p class="carousel-subtitle">Desarrolla tu técnica y potencia con entrenadores profesionales</p>
+            <div class="carousel-btns">
+              <a href="#horarios" class="carousel-btn">Ver Horarios</a>
+              <a href="#contact" class="carousel-btn carousel-btn--secondary">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Kick Boxing -->
+        <div class="carousel-slide">
+          <img src="./src/public/images/activity-kickboxing.jpg" alt="Kick Boxing Training" loading="lazy">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-content">
+            <h1 class="carousel-title">Kick Boxing</h1>
+            <p class="carousel-subtitle">Combina técnicas de boxeo y patadas para un entrenamiento explosivo</p>
+            <div class="carousel-btns">
+              <a href="#horarios" class="carousel-btn">Ver Horarios</a>
+              <a href="#contact" class="carousel-btn carousel-btn--secondary">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - Cross Training -->
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=1920&h=1080&fit=crop"
+            alt="Cross Training" loading="lazy">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-content">
+            <h1 class="carousel-title">Cross Training</h1>
+            <p class="carousel-subtitle">Mejora tu condición física con entrenamientos funcionales de alta intensidad
+            </p>
+            <div class="carousel-btns">
+              <a href="#horarios" class="carousel-btn">Ver Horarios</a>
+              <a href="#contact" class="carousel-btn carousel-btn--secondary">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 - MMA -->
+        <div class="carousel-slide">
+          <img src="./src/public/images/activity-mma.jpg" alt="Entrenamiento MMA" loading="lazy">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-content">
+            <h1 class="carousel-title">MMA</h1>
+            <p class="carousel-subtitle">Domina las técnicas más efectivas del combate moderno</p>
+            <div class="carousel-btns">
+              <a href="#horarios" class="carousel-btn">Ver Horarios</a>
+              <a href="#contact" class="carousel-btn carousel-btn--secondary">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 - Taekwondo -->
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1555597408-26bc8e548a46?w=1920&h=1080&fit=crop" alt="Taekwondo"
+            loading="lazy">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-content">
+            <h1 class="carousel-title">Taekwondo</h1>
+            <p class="carousel-subtitle">Disciplina, respeto y defensa personal</p>
+            <div class="carousel-btns">
+              <a href="#horarios" class="carousel-btn">Ver Horarios</a>
+              <a href="#contact" class="carousel-btn carousel-btn--secondary">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 6 - Mix Women -->
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1920&h=1080&fit=crop"
+            alt="Mix Women Training" loading="lazy">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-content">
+            <h1 class="carousel-title">Mix Women</h1>
+            <p class="carousel-subtitle">Entrenamiento para mujeres</p>
+            <div class="carousel-btns">
+              <a href="#horarios" class="carousel-btn">Ver Horarios</a>
+              <a href="#contact" class="carousel-btn carousel-btn--secondary">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 7 - Funcional -->
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920&h=1080&fit=crop"
+            alt="Entrenamiento Funcional" loading="lazy">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-content">
+            <h1 class="carousel-title">Funcional</h1>
+            <p class="carousel-subtitle">Movimientos naturales del cuerpo para mejorar fuerza y coordinación</p>
+            <div class="carousel-btns">
+              <a href="#horarios" class="carousel-btn">Ver Horarios</a>
+              <a href="#contact" class="carousel-btn carousel-btn--secondary">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles de Navegación -->
+      <button class="carousel-control carousel-control--prev" aria-label="Slide anterior">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="carousel-control carousel-control--next" aria-label="Siguiente slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button class="carousel-dot active" aria-label="Ir a slide 1" data-slide="0"></button>
+        <button class="carousel-dot" aria-label="Ir a slide 2" data-slide="1"></button>
+        <button class="carousel-dot" aria-label="Ir a slide 3" data-slide="2"></button>
+        <button class="carousel-dot" aria-label="Ir a slide 4" data-slide="3"></button>
+        <button class="carousel-dot" aria-label="Ir a slide 5" data-slide="4"></button>
+        <button class="carousel-dot" aria-label="Ir a slide 6" data-slide="5"></button>
+        <button class="carousel-dot" aria-label="Ir a slide 7" data-slide="6"></button>
       </div>
     </section>
   </header>
@@ -363,6 +495,7 @@
   </footer>
 
   <script type="module" src="./src/js/index.js"></script>
+  <script type="module" src="./src/js/carousel.js"></script>
 </body>
 
 </html>
